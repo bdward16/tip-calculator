@@ -1,0 +1,159 @@
+html {
+  background: url(images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Styles for phones */
+@media screen and (min-width: 330px) {
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    border-radius: 5px;
+    position: relative;
+    padding: 25px;
+    margin-top: 120px;
+    color: rgb(206,219,224);
+    background-color: #727176;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #subtitle {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+  }
+
+  #title {
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  #amount {
+    display: inline-block;
+  }
+
+  #billTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #serviceQuality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #submitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #submitData {
+    width: 10em;
+    height: 5em;
+    border-radius: 5px;
+  }
+
+  #results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  #service {
+    width: 20em;
+    height: 2.5em;
+  }
+}
+
+/* Styles for tablets, laptops */
+@media screen and (min-width: 600px) {
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .container {
+    border-radius: 10px;
+    margin-top: 120px;
+    padding: 25px;
+    width: 580px;
+    color: rgb(206,219,224);
+    background-color: #727176;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #subtitle {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+  }
+
+  #title {
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  #amount {
+    display: inline-block;
+  }
+
+  #billTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #serviceQuality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #submitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #submitData {
+    width: 10em;
+    height: 5em;
+    border-radius: 5px;
+  }
+
+  #results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  #service {
+    width: 20em;
+    height: 2.5em;
+  }
+}
