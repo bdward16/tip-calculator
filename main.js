@@ -14,22 +14,41 @@ function calculateTip(event) {
   tipAmount = inputOne * inputTwo;
   totalBill = inputOne + tipAmount;
 
-  function decimalAdjustment(x) {
-    return Number.parseFloat(x).toFixed(2);
-  }
-
   tipAmount = decimalAdjustment(tipAmount);
   totalBill = decimalAdjustment(totalBill);
 
 
   let position = document.getElementsByTagName('p');
 
-  let results = document.createTextNode(' ' + "$" + tipAmount);
-  let totalResults = document.createTextNode(' ' + "$" + totalBill);
+  let results = document.createTextNode('Tip:' + ' ' + "$" + tipAmount);
+  let totalResults = document.createTextNode('Total after tip:' + ' ' + "$" + totalBill);
+
+
+  if (position[0].hasChildNodes()) {
+    position[0].removeChild(position[0].firstChild);
+    position[0].appendChild(results);
+
+  } else {
 
   position[0].appendChild(results);
-  position[1].appendChild(totalResults);
-  
 
+  }
+
+  if (position[1].hasChildNodes()) {
+    position[1].removeChild(position[1].firstChild);
+    position[1].appendChild(totalResults);
+
+  } else {
+
+    position[1].appendChild(totalResults);
+  } 
+
+  
+  
 }
+
+function decimalAdjustment(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+
   document.addEventListener("submit", calculateTip);
